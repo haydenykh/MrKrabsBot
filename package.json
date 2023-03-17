@@ -1,0 +1,23 @@
+{
+    "name": "mr-krabs-bot",
+    "version": "0.0.1",
+    "description": "A fan made bot for Discord.",
+    "main": "src/index.js",
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "discord-bot",
+        "bot",
+        "application",
+        "discord.js",
+        "djs",
+        "client"
+    ],
+    "author": "Minecraft55665",
+    "license": "ISC"
+}
