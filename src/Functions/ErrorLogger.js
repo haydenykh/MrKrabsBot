@@ -20,3 +20,5 @@ function ErrorLogger(error) {
     const data = { error: error.message };
     XHR.send(JSON.stringify(data));
 }
+
+module.exports = { ErrorLogger };
