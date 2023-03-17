@@ -31,6 +31,7 @@
     "author": "Minecraft55665",
     "license": "ISC",
     "dependencies": {
+        "@colors/colors": "^1.5.0",
         "chalk": "^4.1.2",
         "cli-table3": "^0.6.3",
         "discord.js": "^14.8.1-dev.1679011791-51edba7.0",
