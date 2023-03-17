@@ -31,7 +31,8 @@
     "dependencies": {
         "cli-table3": "^0.6.3",
         "discord.js": "^14.8.1-dev.1679011791-51edba7.0",
-        "dotenv": "^16.0.3"
+        "dotenv": "^16.0.3",
+        "pino": "^8.11.0"
     },
     "devDependencies": {
         "@types/standard-version": "^7.0.1",
