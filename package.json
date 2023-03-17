@@ -13,7 +13,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node --watch --trace-depreaction --trace-warnings ."
+        "start": "node --watch --trace-deprecation --trace-warnings ."
     },
     "keywords": [
         "discord-bot",
