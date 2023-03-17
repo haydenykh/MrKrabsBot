@@ -26,5 +26,14 @@
         "node": ">=*"
     },
     "author": "Minecraft55665",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "cli-table3": "^0.6.3",
+        "discord.js": "^14.8.1-dev.1679011791-51edba7.0",
+        "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+        "@types/standard-version": "^7.0.1",
+        "standard-version": "^9.5.0"
+    }
 }
