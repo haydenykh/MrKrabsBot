@@ -1,3 +1,3 @@
-const { ErrorLogger } = require("./ErrorLogger.js");
+const { ErrorLogger, WarnLogger, InfoLogger } = require("./Logger.js");
 
-module.exports = { ErrorLogger };
+module.exports = { ErrorLogger, InfoLogger, WarnLogger };
