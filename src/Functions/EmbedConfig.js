@@ -11,6 +11,11 @@ function footer(username, discriminator) {
         .replaceAll("{DISCRIMINATOR}", discriminator);
 }
 
+/**
+ * @param {string | undefined} username
+ * @param {string | undefined} discriminator
+ * @returns {string}
+ */
 function author(username, discriminator) {
     return client.config.embeds.author.text
         .replaceAll("{USERNAME}", username)
