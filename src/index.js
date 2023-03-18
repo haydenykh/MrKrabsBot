@@ -10,6 +10,8 @@ const client = new ExtendedClient({
     partials: Object.keys(Partials),
 });
 
+module.exports = client;
+
 client.start(process.env.TOKEN);
 
 process.on("unhandledRejection", (reason) => {
