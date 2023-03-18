@@ -14,7 +14,7 @@ function loadEvents(client) {
         colAligns: ["center", "center"],
         rowAligns: ["center", "center"],
         style: {
-            head: ["cyan"],
+            head: ["cyan", "bold"],
         },
     });
 
