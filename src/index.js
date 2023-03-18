@@ -12,7 +12,7 @@ const client = new ExtendedClient({
 
 client.start(process.env.TOKEN);
 
-process.on("unhandledRejection", (reason, _promise) => {
+process.on("unhandledRejection", (reason) => {
     const reason_ = chalk.red(reason);
     throw reason_;
 });
