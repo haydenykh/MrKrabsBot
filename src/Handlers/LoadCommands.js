@@ -19,7 +19,6 @@ function loadCommands(client) {
     });
 
     /* by lyxcode */
-    client.commands = new Map();
     const commands = new Array();
     /* end */
 

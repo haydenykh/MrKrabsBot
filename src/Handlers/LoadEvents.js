@@ -19,7 +19,6 @@ function loadEvents(client) {
     });
 
     /* by lyxcode */
-    client.events = new Map();
     /* end */
 
     const eventFolders = fs.readdirSync("./src/Events");
