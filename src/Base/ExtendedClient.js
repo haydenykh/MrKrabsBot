@@ -1,4 +1,4 @@
-const { Client, ClientOptions } = require("discord.js");
+const { Client, ClientOptions, Collection } = require("discord.js");
 const chalk = require("chalk");
 const { loadEvents } = require("../Handlers/index.js");
 
@@ -10,6 +10,10 @@ class ExtendedClient extends Client {
         super(options);
     }
 
+    commands = new Collection();
+    events = new Collection();
+    config = require(`../config.json`);
+
     /**
      * @param {string | undefined} token
      */
@@ -17,7 +21,7 @@ class ExtendedClient extends Client {
         console.time(`Client Log In`);
 
         await this.login(token)
-            .then((_value) => {
+            .then(() => {
                 loadEvents(this);
 
                 console.info(
