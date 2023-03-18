@@ -1,0 +1,29 @@
+## Standard Version Actions
+---
+- Feature: A new feature or functionality added to the codebase.
+- Bugfix: A fix for a bug or issue in the codebase.
+- Refactor: A change in the codebase that improves its structure or readability without changing its functionality.
+- Style: A change in the codebase that improves its appearance or formatting without changing its functionality.
+- Documentation: A change in the documentation of the codebase.
+- Test: A change in the tests of the codebase.
+- Configuration: A change in the configuration files or settings of the codebase.
+- Chore: A change in the codebase that is not related to its functionality, such as updating dependencies or formatting code.
+- Add: Adding a new feature or functionality to the codebase.
+- Update: Updating an existing feature or functionality in the codebase.
+- Remove: Removing a feature or functionality from the codebase.
+- Fix: Fixing a bug or issue in the codebase.
+- Refactor: Refactoring the codebase to improve its structure or readability.
+- Test: Adding or updating tests for the codebase.
+- Document: Adding or updating documentation for the codebase.
+- Revert: Reverting a previous change in the codebase.
+- Merge: Merging changes from one branch or repository into another.
+- Optimize: Optimizing the codebase for better performance.
+- Initialize: Initializing a new component or functionality in the codebase.
+- Implement: Implementing a new feature or functionality in the codebase.
+- Rename: Renaming a variable, function, or file in the codebase.
+- Move: Moving a file or function to a different location in the codebase.
+- Clean: Cleaning up or removing unnecessary code or dependencies.
+- Simplify: Simplifying the codebase to make it more readable or efficient.
+- Upgrade: Upgrading dependencies or libraries in the codebase.
+- Downgrade: Downgrading dependencies or libraries in the codebase.
+- Deprecate: Marking a feature or functionality as deprecated and planning to remove it in the future.
