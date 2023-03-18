@@ -9,6 +9,12 @@
             "success": "00FF00",
             "warning": "FFFF00",
             "transparent": "2F3136"
+        },
+        "footer": {
+            "text": "by {USERNAME}#{DISCRIMINATOR}"
+        },
+        "author": {
+            "text": "{USERNAME}#{DISCRIMINATOR}"
         }
     },
 
@@ -21,5 +27,18 @@
 
     "messages": {
         "error": "An error occurred while executing this command."
+    },
+
+    "commands": {
+        "help": {
+            "emojis": {
+                "public": "🌐",
+                "utils": "➕"
+            },
+            "descriptions": {
+                "public": "Commands that can be used by everyone.",
+                "utilities": "Utility commands."
+            }
+        }
     }
 }
