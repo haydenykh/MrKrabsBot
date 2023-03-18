@@ -1,6 +1,6 @@
 {
     "name": "mr-krabs-bot",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A fan made bot for Discord.",
     "main": "src/index.js",
     "directories": {
