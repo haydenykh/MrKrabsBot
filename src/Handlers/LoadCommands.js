@@ -30,12 +30,16 @@ function loadCommands(client) {
             .filter((file) => file.endsWith(".js"));
         for (const commandFile of commandFiles) {
             const command = require(`../Commands/${commandFolder}/${commandFile}`);
-            const properties = { command, commandFolder };
+            const properties = { commandFolder, ...command };
             client.commands.set(command.data.name, properties);
 
-            table.push([file, colors.green("Success")]);
+            commands.push(command.data.toJSON());
+
+            table.push([commandFile, colors.green("Success")]);
         }
     }
+
+    client.application.commands.set(commands);
 
     return console.log(
         table.toString() + `\n${chalk.green(`[commands] Loaded Commands.`)}`
