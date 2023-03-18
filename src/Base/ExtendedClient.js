@@ -1,6 +1,6 @@
 const { Client, ClientOptions, Collection } = require("discord.js");
 const chalk = require("chalk");
-const { loadEvents } = require("../Handlers/index.js");
+const { loadEvents, loadCommands } = require("../Handlers/index.js");
 
 class ExtendedClient extends Client {
     /**
@@ -23,6 +23,7 @@ class ExtendedClient extends Client {
         await this.login(token)
             .then(() => {
                 loadEvents(this);
+                loadCommands(this);
 
                 console.info(
                     chalk.green(`[client] Logged in as ${this.user.tag}!`),

@@ -1,3 +1,4 @@
 const { loadEvents } = require("./LoadEvents.js");
+const { loadCommands } = require("./LoadCommands.js");
 
-module.exports = { loadEvents };
+module.exports = { loadEvents, loadCommands };
