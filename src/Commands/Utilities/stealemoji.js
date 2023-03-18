@@ -12,7 +12,7 @@ const { default: axios } = require("axios");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("stealemoji")
-        .setDescription("Steal an emoji from a server")
+        .setDescription("Steal an emoji from a server.")
         .setDefaultMemberPermissions(
             PermissionFlagsBits.ManageEmojisAndStickers
         )
