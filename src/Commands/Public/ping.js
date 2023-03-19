@@ -22,7 +22,7 @@ module.exports = {
         const time = moment.duration(2, "seconds").asMilliseconds();
 
         const pingEmbed = new EmbedBuilder()
-            .setTitle(`${client.config.emojis.check} Pong!`)
+            .setTitle(`${client.config.emojis.loading} Pong!`)
             .addFields([
                 {
                     name: "WebSocket Ping",
@@ -43,18 +43,20 @@ module.exports = {
             })
             .then((value) => {
                 const editedNow = moment.now();
-                const editedEmbed = pingEmbed.setFields([
-                    {
-                        name: "WebSocket Ping",
-                        value: websocketPing + "ms",
-                        inline: true,
-                    },
-                    {
-                        name: `Interaction Ping`,
-                        value: `${editedNow - now}ms`,
-                        inline: true,
-                    },
-                ]);
+                const editedEmbed = pingEmbed
+                    .setTitle(`${client.config.emojis.check} Pong!`)
+                    .setFields([
+                        {
+                            name: "WebSocket Ping",
+                            value: websocketPing + "ms",
+                            inline: true,
+                        },
+                        {
+                            name: `Interaction Ping`,
+                            value: `${editedNow - now}ms`,
+                            inline: true,
+                        },
+                    ]);
 
                 setTimeout(() => {
                     value.edit({
