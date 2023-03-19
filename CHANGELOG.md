@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.3...v0.0.4) (2023-03-19)
+
+
+### Features
+
+* a function that capitalizes the first letter ([db50e85](https://github.com/Minecraft55665/MrKrabsBot/commit/db50e856d6813fe241e0e4b2be98abad3ab4dab7))
+* dynamic help command with drop down menu ([7dea132](https://github.com/Minecraft55665/MrKrabsBot/commit/7dea1325c9969609a00c6ad2274df04ff44adf9a))
+* embed config ([3ec6a1f](https://github.com/Minecraft55665/MrKrabsBot/commit/3ec6a1f8313479eeda6a6e96fb5f90b1fd86a273))
+* footer and author functions ([97caed7](https://github.com/Minecraft55665/MrKrabsBot/commit/97caed75530395d9db69c8c1263410ae92d213d4))
+
+
+### Bug Fixes
+
+* export client ([8ac1ff1](https://github.com/Minecraft55665/MrKrabsBot/commit/8ac1ff1427ea5a265200ee18f8502bfa3977b0d1))
+* param ([0e04572](https://github.com/Minecraft55665/MrKrabsBot/commit/0e045724d25547825c90ba20a2b26baba5f258cf))
+* removed ([5086325](https://github.com/Minecraft55665/MrKrabsBot/commit/508632575076b1cc2be218b9f93c86284f7793fe))
+* removed 'unhandledRejection' due to not showing where error is found. ([f033b06](https://github.com/Minecraft55665/MrKrabsBot/commit/f033b06b80b9799a7f8fe6ffe898d492bea09d91))
+* send loading emoji first instead of "check" ([031fe66](https://github.com/Minecraft55665/MrKrabsBot/commit/031fe663a0c8722114389a57b8262bd6d633105e))
+* utils -> utilities ([9b0b066](https://github.com/Minecraft55665/MrKrabsBot/commit/9b0b0662e8ed074153ea85bafc9d71d1f2568dfa))
+
 ### [0.0.3](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.2...v0.0.3) (2023-03-18)
 
 
