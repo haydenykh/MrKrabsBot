@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.4...v0.0.5) (2023-03-19)
+
+
+### Bug Fixes
+
+* renamed .yaml -> .yml, npm ([6632735](https://github.com/Minecraft55665/MrKrabsBot/commit/6632735f445a781ed10077bbf4220d515026eaa5))
+
 ### [0.0.4](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.3...v0.0.4) (2023-03-19)
 
 
