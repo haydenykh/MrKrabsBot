@@ -33,7 +33,7 @@
         "help": {
             "emojis": {
                 "public": "🌐",
-                "utils": "➕"
+                "utilities": "➕"
             },
             "descriptions": {
                 "public": "Commands that can be used by everyone.",
