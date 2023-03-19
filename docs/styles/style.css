@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500&family=Poppins&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.title {
+    /* help me make it center */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 1s;
+    transition-property: font-size, transform;
+}
+
+.title:hover {
+    font-size: 36px;
+}
+
