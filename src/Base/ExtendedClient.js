@@ -4,6 +4,7 @@ const {
     loadEvents,
     loadCommands,
     loadButtons,
+    loadStringSelects,
 } = require("../Handlers/index.js");
 
 class ExtendedClient extends Client {
@@ -16,6 +17,7 @@ class ExtendedClient extends Client {
 
     commands = new Collection();
     events = new Collection();
+    stringSelects = new Collection();
     buttons = new Collection();
     config = require(`../config.json`);
 
@@ -30,6 +32,7 @@ class ExtendedClient extends Client {
                 loadEvents(this);
                 loadCommands(this);
                 loadButtons(this);
+                loadStringSelects(this);
 
                 console.info(
                     chalk.green(`[client] Logged in as ${this.user.tag}!`),
