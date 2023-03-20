@@ -8,6 +8,10 @@ const chalk = require("chalk");
  * @param {ExtendedClient} client
  */
 async function loadButtons(client) {
+    /* by RoaldDahl */
+    // * git repo (https://github.com/RoaldDahl/Button-Handler)
+    // * got from kajdev server
+    // ! with some changes
     const table = new Table({
         head: [" Buttons ", " Status "],
         colAligns: ["center", "center"],
@@ -16,9 +20,6 @@ async function loadButtons(client) {
             head: ["cyan", "bold"],
         },
     });
-
-    /* by lyxcode */
-    /* end */
 
     const buttonFolders = fs.readdirSync("./src/Components/Buttons");
     for (const buttonFolder of buttonFolders) {
