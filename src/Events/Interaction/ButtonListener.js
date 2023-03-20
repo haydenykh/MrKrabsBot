@@ -10,17 +10,17 @@ module.exports = {
      */
     async execute(interaction, client) {
         /* by kajdev */
-        if (!interaction.isChatInputCommand()) return;
+        if (!interaction.isButton()) return;
 
-        const command = client.commands.get(interaction.commandName);
+        const button = client.buttons.get(interaction.customId);
 
-        if (!command) {
+        if (!button) {
             interaction.reply({
-                content: `Command interaction either outdated or unavailable.`,
-                ephemeral: true,
+                content: `Button interaction either outdated or unavailable..`,
             });
         }
-        command.execute(interaction, client);
+
+        button.execute(interaction, client);
         /* end */
     },
 };
