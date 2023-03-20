@@ -18,7 +18,7 @@ module.exports = {
 
         if (!button) {
             interaction.reply({
-                content: `Button interaction either outdated or unavailable..`,
+                content: `Button interaction either outdated or unavailable.`,
             });
         }
 
