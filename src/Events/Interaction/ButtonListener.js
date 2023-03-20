@@ -9,7 +9,9 @@ module.exports = {
      * @param {ExtendedClient} client
      */
     async execute(interaction, client) {
-        /* by kajdev */
+        /* by RoaldDahl */
+        // * git repo (https://github.com/RoaldDahl/Button-Handler)
+        // * got from kajdev server
         if (!interaction.isButton()) return;
 
         const button = client.buttons.get(interaction.customId);
