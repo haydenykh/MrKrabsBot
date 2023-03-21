@@ -22,13 +22,14 @@ module.exports = {
                 .setName(`emoji`)
                 .setDescription(`The emoji you want to steal from the server`)
                 .setRequired(true)
-                .setMinLength(1);
+                .setMinLength(3);
         })
         .addStringOption((option) => {
             return option
                 .setName(`name`)
                 .setDescription(`The name of the new emoji.`)
-                .setRequired(true);
+                .setRequired(true)
+                .setMinLength(1);
         }),
     /**
      * @param {CommandInteraction} interaction
