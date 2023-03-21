@@ -15,11 +15,22 @@ module.exports = {
         const command = client.commands.get(interaction.commandName);
 
         if (!command) {
-            interaction.reply({
+            return interaction.reply({
                 content: `Command interaction either outdated or unavailable.`,
                 ephemeral: true,
             });
         }
+
+        if (
+            command.developerOnly &&
+            interaction.user.id !== process.env.OWNER_ID
+        ) {
+            return interaction.reply({
+                content: `You are not allowed to use this command.`,
+                ephemeral: true,
+            });
+        }
+
         command.execute(interaction, client);
         /* end */
     },

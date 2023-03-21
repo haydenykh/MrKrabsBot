@@ -18,8 +18,18 @@ module.exports = {
         const stringSelects = client.stringSelects.get(interaction.customId);
 
         if (!stringSelects) {
-            interaction.reply({
+            return interaction.reply({
                 content: `StringSelectMenu interaction either outdated or unavailable.`,
+            });
+        }
+
+        if (
+            stringSelects.developerOnly &&
+            interaction.user.id !== process.env.OWNER_ID
+        ) {
+            return interaction.reply({
+                content: `You are not allowed to use this string select.`,
+                ephemeral: true,
             });
         }
 
