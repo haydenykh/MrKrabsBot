@@ -8,6 +8,7 @@ const {
 } = require("discord.js");
 const { ExtendedClient } = require("../../Base/index.js");
 const { default: axios } = require("axios");
+const { footer, author } = require("../../Functions/index.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -70,6 +71,13 @@ module.exports = {
                 ephemeral: true,
             });
         }
+
+        const stoleEmbed = new EmbedBuilder()
+            .setTitle(`${client.config.emojis.check} Action Success`)
+            .setFooter({
+                text: footer(client.user.username, client.user.discriminator),
+                iconURL: 
+            })
 
         interaction.guild.emojis
             .create({ attachment: `${emoji}`, name: `${name}` })
