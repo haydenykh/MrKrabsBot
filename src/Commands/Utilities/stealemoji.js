@@ -1,6 +1,5 @@
 const {
     SlashCommandBuilder,
-    CommandInteraction,
     EmbedBuilder,
     PermissionFlagsBits,
     ChatInputCommandInteraction,
@@ -32,7 +31,7 @@ module.exports = {
                 .setMinLength(1);
         }),
     /**
-     * @param {CommandInteraction} interaction
+     * @param {ChatInputCommandInteraction} interaction
      * @param {ExtendedClient} client
      */
     async execute(interaction, client) {
