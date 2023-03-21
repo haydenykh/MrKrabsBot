@@ -8,7 +8,7 @@ const {
 } = require("discord.js");
 const { ExtendedClient } = require("../../Base/index.js");
 const { default: axios } = require("axios");
-const { footer, author } = require("../../Functions/index.js")
+const { footer, author } = require("../../Functions/index.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -74,16 +74,35 @@ module.exports = {
 
         const stoleEmbed = new EmbedBuilder()
             .setTitle(`${client.config.emojis.check} Action Success`)
+            .setColor(client.config.embeds.colours.success)
+            .setAuthor({
+                name: author(
+                    interaction.user.username,
+                    interaction.user.discriminator
+                ),
+                iconURL: interaction.user.displayAvatarURL({
+                    size: 2048,
+                    forceStatic: true,
+                    extension: "png",
+                }),
+            })
             .setFooter({
                 text: footer(client.user.username, client.user.discriminator),
-                iconURL: 
-            })
-
+                iconURL: client.user.displayAvatarURL({
+                    size: 2048,
+                    forceStatic: true,
+                    extension: "png",
+                }),
+            });
         interaction.guild.emojis
             .create({ attachment: `${emoji}`, name: `${name}` })
             .then((value) => {
+                stoleEmbed.setDescription(
+                    `Successfully stole ${value} into the server.`
+                );
+
                 return interaction.reply({
-                    content: `${value} emoji has been added to the server.`,
+                    embeds: [stoleEmbed],
                 });
             })
             .catch((reason) => {
@@ -91,6 +110,7 @@ module.exports = {
                     content: `${client.config.messages.error}\n${codeBlock(
                         reason
                     )}`,
+                    ephemeral: true,
                 });
             });
     },
