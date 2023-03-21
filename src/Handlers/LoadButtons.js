@@ -37,7 +37,7 @@ async function loadButtons(client) {
     }
 
     return console.log(
-        table.toString() + `\n${chalk.green(`[buttons] Loaded buttons.`)}`
+        table.toString() + `\n${chalk.green(`[buttons] Loaded Buttons.`)}`
     );
 }
 
