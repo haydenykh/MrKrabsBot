@@ -4,7 +4,6 @@ const {
     EmbedBuilder,
     ActionRowBuilder,
     StringSelectMenuBuilder,
-    AnyComponentBuilder,
     ComponentType,
 } = require("discord.js");
 const { ExtendedClient } = require("../../Base/index.js");

@@ -31,7 +31,7 @@ module.exports = {
                 .setRequired(true);
         }),
     /**
-     * @param {ChatInputCommandInteraction} interaction
+     * @param {CommandInteraction} interaction
      * @param {ExtendedClient} client
      */
     async execute(interaction, client) {
