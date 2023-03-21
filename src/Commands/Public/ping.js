@@ -2,10 +2,10 @@ const {
     SlashCommandBuilder,
     CommandInteraction,
     EmbedBuilder,
-    italic,
 } = require("discord.js");
 const { ExtendedClient } = require("../../Base/index.js");
 const moment = require("moment");
+const { footer, author } = require("../../Functions/index.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -35,7 +35,26 @@ module.exports = {
                     inline: true,
                 },
             ])
-            .setColor(client.config.embeds.colours.transparent);
+            .setColor(client.config.embeds.colours.transparent)
+            .setAuthor({
+                name: author(
+                    interaction.user.username,
+                    interaction.user.discriminator
+                ),
+                iconURL: interaction.user.displayAvatarURL({
+                    size: 2048,
+                    forceStatic: true,
+                    extension: "png",
+                }),
+            })
+            .setFooter({
+                text: footer(client.user.username, client.user.discriminator),
+                iconURL: client.user.displayAvatarURL({
+                    size: 2048,
+                    forceStatic: true,
+                    extension: "png",
+                }),
+            });
 
         interaction
             .reply({
