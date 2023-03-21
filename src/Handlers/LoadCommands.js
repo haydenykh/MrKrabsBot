@@ -34,7 +34,7 @@ function loadCommands(client) {
 
             commands.push(command.data.toJSON());
 
-            table.push([commandFile, colors.green("Success")]);
+            table.push([command.data.name, colors.green("Success")]);
         }
     }
 
