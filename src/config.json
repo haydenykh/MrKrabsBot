@@ -22,22 +22,33 @@
         "check": "<:check:1078319180136321035>",
         "empty": "<:empty:1078319378828902453>",
         "x_mark": "<:xmark:1078319342653014139>",
-        "loading": "<a:loading:1086529279761842196>"
+        "loading": "<a:loading:1086529279761842196>",
+        "warning": "⚠️"
     },
 
     "messages": {
-        "error": "An error occurred while executing this command."
+        "error": "An error occurred while executing this command.",
+        "action": {
+            "success": "Action Success",
+            "failed": "Action Failed",
+            "cancelled": "Action Cancelled",
+            "warning": "Action Warning"
+        }
     },
 
     "commands": {
         "help": {
             "emojis": {
                 "public": "🌐",
-                "utilities": "➕"
+                "utilities": "➕",
+                "moderation": "👨‍⚖️",
+                "test": "🧪"
             },
             "descriptions": {
                 "public": "Commands that can be used by everyone.",
-                "utilities": "Utility commands."
+                "utilities": "Utility commands.",
+                "moderation": "Commands used to moderate the server.",
+                "test": "Test commands. You can apply for the test role in the community server."
             }
         }
     }
