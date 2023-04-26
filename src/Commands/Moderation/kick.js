@@ -39,40 +39,44 @@ module.exports = {
 
         const member = guild.members.cache.get(target.id);
 
-        if (member.roles.highest.position >= member_.roles.highest.position) {
-            const embed = new EmbedBuilder()
-                .setTitle(
-                    `${client.config.emojis.warning} ${client.config.messages.action.warning}`
-                )
-                .setDescription(
-                    `<@!${member.id}> has either higher or same role as you in this server.`
-                )
-                .setFooter({
-                    text: footer(
-                        client.user.username,
-                        client.user.discriminator
-                    ),
-                    iconURL: client.user.displayAvatarURL({
-                        size: 2048,
-                        forceStatic: true,
-                        extension: "png",
-                    }),
-                })
-                .setAuthor({
-                    name: author(user.username, user.discriminator),
-                    iconURL: user.displayAvatarURL({
-                        size: 2048,
-                        forceStatic: true,
-                        extension: "png",
-                    }),
-                })
-                .setColor(client.config.embeds.colours.warning)
-                .setTimestamp();
+        if (member) {
+            if (
+                member.roles.highest.position >= member_.roles.highest.position
+            ) {
+                const embed = new EmbedBuilder()
+                    .setTitle(
+                        `${client.config.emojis.warning} ${client.config.messages.action.warning}`
+                    )
+                    .setDescription(
+                        `<@!${member.id}> has either higher or same role as you in this server.`
+                    )
+                    .setFooter({
+                        text: footer(
+                            client.user.username,
+                            client.user.discriminator
+                        ),
+                        iconURL: client.user.displayAvatarURL({
+                            size: 2048,
+                            forceStatic: true,
+                            extension: "png",
+                        }),
+                    })
+                    .setAuthor({
+                        name: author(user.username, user.discriminator),
+                        iconURL: user.displayAvatarURL({
+                            size: 2048,
+                            forceStatic: true,
+                            extension: "png",
+                        }),
+                    })
+                    .setColor(client.config.embeds.colours.warning)
+                    .setTimestamp();
 
-            return interaction.reply({
-                embeds: [embed],
-                ephemeral: true,
-            });
+                return interaction.reply({
+                    embeds: [embed],
+                    ephemeral: true,
+                });
+            }
         }
 
         const kickEmbed = new EmbedBuilder()
