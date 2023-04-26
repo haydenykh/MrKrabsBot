@@ -144,7 +144,7 @@ module.exports = {
             ]);
 
         await member
-            .ban({ days: deleteMessages ? 604800 : 0, reason })
+            .ban({ days: deleteMessages ? 604_800 : 0, reason })
             .then((value) => {
                 banEmbed
                     .setDescription(`Successfully banned <@!${value.id}>.`)
