@@ -155,9 +155,13 @@ module.exports = {
                         .setDescription(`Successfully banned <@!${value.id}>.`)
                         .setTimestamp();
                     userEmbed.setTimestamp();
-                    value.send({
-                        embeds: [userEmbed],
-                    });
+                    value
+                        .send({
+                            embeds: [userEmbed],
+                        })
+                        .catch((reason) => {
+                            return reason;
+                        });
                     return interaction.reply({ embeds: [banEmbed] });
                 })
                 .catch((reason) => {

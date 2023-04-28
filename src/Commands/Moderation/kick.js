@@ -151,42 +151,7 @@ module.exports = {
                             embeds: [userEmbed],
                         })
                         .catch((reason) => {
-                            const errorEmbed = new EmbedBuilder()
-                                .setTitle(
-                                    `${client.config.emojis.x_mark} ${client.config.messages.action.failed}`
-                                )
-                                .setDescription(
-                                    `${
-                                        client.config.messages.error
-                                    }\n${codeBlock(reason.message)}`
-                                )
-                                .setColor(client.config.embeds.colours.error)
-                                .setAuthor({
-                                    name: author(
-                                        user.username,
-                                        user.discriminator
-                                    ),
-                                    iconURL: user.displayAvatarURL({
-                                        size: 2048,
-                                        forceStatic: true,
-                                        extension: "png",
-                                    }),
-                                })
-                                .setFooter({
-                                    text: footer(
-                                        client.user.username,
-                                        client.user.discriminator
-                                    ),
-                                    iconURL: client.user.displayAvatarURL({
-                                        size: 2048,
-                                        forceStatic: true,
-                                        extension: "png",
-                                    }),
-                                });
-                            interaction.reply({
-                                embeds: [errorEmbed],
-                                ephemeral: true,
-                            });
+                            return reason;
                         });
                     return interaction.reply({ embeds: [kickEmbed] });
                 })
