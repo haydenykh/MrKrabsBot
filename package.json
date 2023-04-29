@@ -42,6 +42,7 @@
     },
     "devDependencies": {
         "@types/standard-version": "^7.0.1",
+        "eslint": "^8.39.0",
         "standard-version": "^9.5.0"
     }
 }
