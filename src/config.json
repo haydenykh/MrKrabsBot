@@ -1,8 +1,4 @@
 {
-    "logging": {
-        "pretty": true
-    },
-
     "embeds": {
         "colours": {
             "error": "FF0000",
