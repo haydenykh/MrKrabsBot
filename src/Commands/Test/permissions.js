@@ -15,6 +15,7 @@ module.exports = {
                 .setDescription(`The user you want to get their permissions.`)
                 .setRequired(false);
         }),
+    developerOnly: true,
     /**
      * @param {ChatInputCommandInteraction} interaction
      * @param {ExtendedClient} client
