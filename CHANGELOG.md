@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.7...v0.0.8) (2023-05-06)
+
+
+### Features
+
+* :tada: Button Handler ([3024b18](https://github.com/Minecraft55665/MrKrabsBot/commit/3024b185ab7518c622eb26f97b0fb037b7737671))
+* :tada: StringSelectMenu handler ([fcef143](https://github.com/Minecraft55665/MrKrabsBot/commit/fcef143b3ddc27e9f7f630030e9676e22cfea950))
+* a template ([87aae98](https://github.com/Minecraft55665/MrKrabsBot/commit/87aae983242ab826fce889ffbbc217bd290e4826))
+* ban command ([56bd23d](https://github.com/Minecraft55665/MrKrabsBot/commit/56bd23ded0b394465ec0423d23bea60c79ffec2d))
+* developerMode ([059ac71](https://github.com/Minecraft55665/MrKrabsBot/commit/059ac71bb9c5cdf5367cdc96c3457504b258634c))
+* developerOnly ([018e695](https://github.com/Minecraft55665/MrKrabsBot/commit/018e695545524a23287ff36195c0e6042d89c674))
+* embed template ([c7c78f9](https://github.com/Minecraft55665/MrKrabsBot/commit/c7c78f91afc118691fb5a9e0d5e226c9554780d0))
+* eslint ([2551a98](https://github.com/Minecraft55665/MrKrabsBot/commit/2551a982e9077b12de326f103187a5adaeb14f30))
+* index.html, a test ([33fb240](https://github.com/Minecraft55665/MrKrabsBot/commit/33fb2400208c78f9997b95b604bf798aa1a3c42f))
+* style ([8abdf71](https://github.com/Minecraft55665/MrKrabsBot/commit/8abdf715ea7085aa701ea8ad6227f04ba8bc11e4))
+
+
+### Bug Fixes
+
+* added developerOnly ([2a4f9de](https://github.com/Minecraft55665/MrKrabsBot/commit/2a4f9dea283ec5690e67ac22f82342331a2dedc5))
+* changes ([673bd33](https://github.com/Minecraft55665/MrKrabsBot/commit/673bd3391338553c59504b94855b0dfad328164d))
+* changes ([6351410](https://github.com/Minecraft55665/MrKrabsBot/commit/63514101f556d1ebb8a16743e279b83508c2bdfb))
+* changes ([4a2edf5](https://github.com/Minecraft55665/MrKrabsBot/commit/4a2edf50065ab160ddc6b46b36bfcde9f9df5d29))
+* check for member present ([c28202d](https://github.com/Minecraft55665/MrKrabsBot/commit/c28202d1ff90038d3d152d48149aa9241f7ee526))
+* check if the member is present or not ([7ef5554](https://github.com/Minecraft55665/MrKrabsBot/commit/7ef55547ef2309c1793133516e04a1174fd74059))
+* emoji (3 min len), name (1 min len) ([5c7669b](https://github.com/Minecraft55665/MrKrabsBot/commit/5c7669b853b72bc42705de574a751ca7609ac247))
+* if notice cant be send, send to kicker ([49f9f6f](https://github.com/Minecraft55665/MrKrabsBot/commit/49f9f6f204ca6b8872c594ba5372023e2211329b))
+* removed check ([974285b](https://github.com/Minecraft55665/MrKrabsBot/commit/974285bad6c480da138108ec6905428f4993ebed))
+* removed logging part, idek what to do with it ([8ba72f6](https://github.com/Minecraft55665/MrKrabsBot/commit/8ba72f6c6e6f22194e642ef38db8b20ae0142f5b))
+* removed moderation commands since default moderation commands existed ([f8ee8b2](https://github.com/Minecraft55665/MrKrabsBot/commit/f8ee8b227b3b1a1786120f66b141dbb218f77fb1))
+* return error instead of sending ([177c674](https://github.com/Minecraft55665/MrKrabsBot/commit/177c674fb91f48b8c6bfef394ba7b09fe75a9166))
+* switch back to chatinputcommandinteraction ([83f0d32](https://github.com/Minecraft55665/MrKrabsBot/commit/83f0d3298ceea70dad1220bf5a00bd0f10f0dfc3))
+* switched file to name ([bbea0f8](https://github.com/Minecraft55665/MrKrabsBot/commit/bbea0f8c9926ce60f0357f7b906588d1ec2c9a33))
+
 ### [0.0.7](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.6...v0.0.7) (2023-03-19)
 
 ### [0.0.6](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.5...v0.0.6) (2023-03-19)
