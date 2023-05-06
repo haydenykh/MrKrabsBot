@@ -30,7 +30,7 @@ module.exports = {
             const permissions = member.permissions;
 
             interaction.reply({
-                content: `${codeBlock(permissions.toArray().join(", "))}`,
+                content: `- ${permissions.toArray().join("\n- ")}`,
                 ephemeral: true,
             });
         }
