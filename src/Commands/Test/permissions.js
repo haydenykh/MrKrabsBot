@@ -24,9 +24,9 @@ module.exports = {
         const { options, guild } = interaction;
         const user = options.getUser(`user`) || interaction.user;
 
-        const member = guild.members.cache.get(user.id);
-
         if (user) {
+            const member = guild.members.cache.get(user.id);
+
             const permissions = member.permissions;
 
             interaction.reply({
