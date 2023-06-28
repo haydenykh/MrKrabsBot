@@ -37,10 +37,7 @@ module.exports = {
             ])
             .setColor(client.config.embeds.colours.transparent)
             .setAuthor({
-                name: author(
-                    interaction.user.username,
-                    interaction.user.discriminator
-                ),
+                name: author(interaction.user.username),
                 iconURL: interaction.user.displayAvatarURL({
                     size: 2048,
                     forceStatic: true,
@@ -48,7 +45,7 @@ module.exports = {
                 }),
             })
             .setFooter({
-                text: footer(client.user.username, client.user.discriminator),
+                text: footer(client.user.username),
                 iconURL: client.user.displayAvatarURL({
                     size: 2048,
                     forceStatic: true,
