@@ -8,7 +8,7 @@ const chalk = require("chalk");
 /**
  * @param {ExtendedClient} client
  */
-function loadCommands(client) {
+async function loadCommands(client) {
     const table = new Table({
         head: [" Commands ", " Status "],
         colAligns: ["center", "center"],
@@ -19,6 +19,8 @@ function loadCommands(client) {
     });
 
     /* by lyxcode */
+    await client.commands.clear();
+
     const commands = new Array();
     /* end */
 

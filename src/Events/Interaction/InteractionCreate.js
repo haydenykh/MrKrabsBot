@@ -31,7 +31,9 @@ module.exports = {
             });
         }
 
-        command.execute(interaction, client);
+        if (command) {
+            command.execute(interaction, client);
+        }
         /* end */
     },
 };
