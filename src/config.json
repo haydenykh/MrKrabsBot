@@ -44,13 +44,15 @@
                 "public": "🌐",
                 "utilities": "➕",
                 "moderation": "👨‍⚖️",
-                "test": "🧪"
+                "test": "🧪",
+                "information": "ℹ️"
             },
             "descriptions": {
                 "public": "Commands that can be used by everyone.",
                 "utilities": "Utility commands.",
                 "moderation": "Commands used to moderate the server.",
-                "test": "Test commands. You can apply for the test role in the community server."
+                "test": "Test commands. You can apply for the test role in the community server.",
+                "information": "Commands that provides information."
             }
         }
     }
