@@ -7,10 +7,10 @@
             "transparent": "2F3136"
         },
         "footer": {
-            "text": "by {USERNAME}#{DISCRIMINATOR}"
+            "text": "by {USERNAME}"
         },
         "author": {
-            "text": "{USERNAME}#{DISCRIMINATOR}"
+            "text": "{USERNAME}"
         }
     },
 
