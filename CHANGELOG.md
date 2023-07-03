@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.8...v0.0.9) (2023-07-03)
+
+
+### Features
+
+* Context Menu Handler ([b85c411](https://github.com/Minecraft55665/MrKrabsBot/commit/b85c411eb0d1e938d65426a2ddd72f82f5c08107))
+* information category ([47cd27d](https://github.com/Minecraft55665/MrKrabsBot/commit/47cd27dca943d4a29de4b36f35ae70cd488084df))
+* more emojis added from Discord Bots server ([561db51](https://github.com/Minecraft55665/MrKrabsBot/commit/561db519c6a55ba6f489bcd9a11de77c6950acd8))
+* new templates (button, select-menu) ([99a348a](https://github.com/Minecraft55665/MrKrabsBot/commit/99a348a6c6c9dda3c78d44cb8d434b8db43c19bd))
+* shows the mention of the user ([d4b6f5a](https://github.com/Minecraft55665/MrKrabsBot/commit/d4b6f5ab7537976b9296bda6432d7db57b1f6997))
+* User Information ([4f2813e](https://github.com/Minecraft55665/MrKrabsBot/commit/4f2813ef2dc30d1542017503d05e906345c29d8f))
+
+
+### Bug Fixes
+
+* changes ([7df50ba](https://github.com/Minecraft55665/MrKrabsBot/commit/7df50ba3aa9ed33070fc61221d576a203919f877))
+* grammar fix (embeds -> embed) ([55649d2](https://github.com/Minecraft55665/MrKrabsBot/commit/55649d21fd3b5bb06b4cdc78ee3280dea25e58d5))
+* moved member variable to get checked first ([42b451e](https://github.com/Minecraft55665/MrKrabsBot/commit/42b451e4e81925ccafaad98c72e8e1f5485f65e0))
+* removed context menus ([79ec273](https://github.com/Minecraft55665/MrKrabsBot/commit/79ec2733ef3106c267cafa193b82135734826cf1))
+* removed context menus ([34b7795](https://github.com/Minecraft55665/MrKrabsBot/commit/34b779545473640f7a56f94a8603ae1f8e8cb1a5))
+* removed discriminator ([f64dfef](https://github.com/Minecraft55665/MrKrabsBot/commit/f64dfefb08d8807cda3a50814f885ed196126959))
+* removed discriminator placeholder ([69c8f7d](https://github.com/Minecraft55665/MrKrabsBot/commit/69c8f7d5db443043e0cba4e1da03ca8d28ea4d82))
+* style: added code block ([47e3097](https://github.com/Minecraft55665/MrKrabsBot/commit/47e3097962035fb69b099aa1681ffb63018dd06e))
+
 ### [0.0.8](https://github.com/Minecraft55665/MrKrabsBot/compare/v0.0.7...v0.0.8) (2023-05-06)
 
 
