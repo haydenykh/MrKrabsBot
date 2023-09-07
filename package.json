@@ -39,6 +39,7 @@
         "dotenv": "^16.0.3",
         "mathjs": "^11.8.0",
         "moment": "^2.29.4",
+        "newtonmath.js": "^1.0.2",
         "node-fetch": "^3.3.1"
     },
     "devDependencies": {

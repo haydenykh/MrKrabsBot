@@ -45,14 +45,16 @@
                 "utilities": "➕",
                 "moderation": "👨‍⚖️",
                 "test": "🧪",
-                "information": "ℹ️"
+                "information": "ℹ️",
+                "api": "#️⃣"
             },
             "descriptions": {
                 "public": "Commands that can be used by everyone.",
                 "utilities": "Utility commands.",
                 "moderation": "Commands used to moderate the server.",
                 "test": "Test commands. You can apply for the test role in the community server.",
-                "information": "Commands that provides information."
+                "information": "Commands that provides information.",
+                "api": "Uses APIs found on https://github.com/public-apis/."
             }
         }
     }
