@@ -31,6 +31,27 @@ module.exports = {
             });
         }
 
+        if (interaction.isChatInputCommand()) {
+            // command handling
+        } else if (interaction.isAutocomplete()) {
+            const command = interaction.client.commands.get(
+                interaction.commandName
+            );
+
+            if (!command) {
+                return interaction.reply({
+                    content: `Command interaction either outdated or unavailable.`,
+                    ephemeral: true,
+                });
+            }
+
+            try {
+                await command.autocomplete(interaction);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
         if (command) {
             command.execute(interaction, client);
         }
